@@ -8,6 +8,188 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <style>
+        html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+@media only screen and(max-width:1366px){
+    #show{
+        position: absolute;
+    background-color: black;
+    left: 180px;
+    padding: 0 2px 0 2px;
+    top:78%;
+    text-align: center;
+    font-weight: 100;
+    }
+    #Contacts-info{
+        height: 90rem;
+    }
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-image: linear-gradient(62deg,#11284D,#181718 );
+    width: 100%;
+    height: 160rem;
+    padding-top: 10px;
+    padding-right: 0;
+    
+}
+#projects {
+    height: 90vh;
+    background-color:#5775BA;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0
+    width: 100%;
+    max-width: 1280px;
+    padding: 15px 0 0 15px;
+    animation: fade 2s alternate;
+}
+@keyframes fade{
+    from{
+        opacity:0.1;
+    }
+    to{
+        opacity:1;
+    }
+}
+.sub-head {
+    font-family: Times New Roman, Sans-Serif;
+    color: white;
+    background-color:#5775BA;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 3px;
+}
+.project-tile {
+    width: 200px;
+    height: 200px;
+}
+.project-tile:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+figcaption:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+#About {
+    background-image: linear-gradient(500deg,#11284D 3%,#181718 100% );
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    animation:animate 2s alternate;
+}
+@keyframes animate{
+    from{
+        transform: translateY(-30px);
+        opacity:0.1;
+        color: #DCDCDC;
+    }
+    to{
+        opacity:1;
+        color:white;
+    }
+}
+figcaption {
+    color:white;
+    width: 200px;
+    font-size: 8px;
+    background-color: #182430;
+    padding: 7px 30px;
+    text-align: center;
+    z-index: -3;
+}
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+Ul>li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 15px;
+}
+#nav-bar ul {
+    background-color: #dc143c;
+    width: 448px;
+    height: 30px;
+    text-align: right;
+    position: fixed;
+    top: -3px;
+    overflow: hidden;
+    z-index: 3;
+}
+#introduction {
+    font-weight: 200;
+    line-space: 20px;
+}
+
+#Show {
+    position: absolute;
+    background-color: black;
+    left: 180px;
+    padding: 0 2px 0 2px;
+    bottom: -900px;
+    text-align: center;
+    font-weight: 100;
+}
+#Work {
+    line-height: 1;
+    font-weight: 200;
+    font-size: 20px;
+}
+#text {
+    font-weight: 100;
+}
+#Contacts a {
+    font-weight: 100;
+    font-size: 10px;
+    padding-right: 20px;
+}
+#Contacts-info {
+    color:white;
+    position: absolute;
+    top: 205%;
+    left: 0.2%;
+    padding: 320px 20px 0px 20px;
+    text-align: center;
+    animation:flap 3s ease-in-out;
+    animation-direction: 2s;
+}
+@keyframes flap{
+    from{
+        transform: translateY(-20px);
+        opacity:0.1;
+        color: #DCDCDC;
+    }
+    to{
+        opacity:1;
+        color:white;
+    }
+}
+#end {
+    display: flex;
+    justify-content: end;
+    align-self: end;
+    font-weight: 100;
+    font-size: 8px;
+}
+
+    </style>
     <main>
         <div id="welcome-section">
             <nav id="nav-bar">
